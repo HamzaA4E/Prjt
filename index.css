@@ -1,0 +1,266 @@
+:root {
+    --bg-color: #19283f;
+    --blue-color : #00c6bf;
+    --bg-btn : #ff3150;
+    --text-btn : #ffc501;
+    --section :#eff7fa;
+}
+
+/* NavBar Start */
+
+
+.navbar {
+  background-color: var(--bg-color);
+}
+.navbar .navbar-nav .nav-link
+{
+    color: white;
+}
+
+.navbar .icon
+{
+    color: var(--blue-color);
+    border-left: 1px solid var(--blue-color);
+}
+.navbar .icon i
+{
+   margin-left: 10px;
+}
+
+.navbar .navbar-toggler
+{
+    color: white;
+    border-color: grey
+}
+
+.navbar .navbar-toggler:focus
+{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded='true']
+{
+    border-color: var(--blue-color);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover
+{
+    color: var(--blue-color);
+}
+.btn-main{
+    color: var(--text-btn);
+    font-weight: bold;
+    background-color: var(--bg-btn);
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+}
+/* NavBar End */
+/* Landing Start */
+.landing{
+    background-color: var(--bg-color);
+    min-height: calc(100vh - 200px);
+    color: white;
+}
+
+.landing h1{
+    font-size: 3rem;
+}
+.landing .btn-main{
+   width: 200px;
+}
+/* Landing End */
+
+/* Features Start */
+.main-title::after
+{
+    content: "";
+    height : 2px;
+    width : 150px;
+    background-color: var(--blue-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder i{
+    left: 50%;
+    transform:  translateX(-50%);
+}
+.features .icon-holder .number
+{
+    font-size: 12rem;
+    color: var(--section);
+}
+.features .icon-holder .icon
+{
+    color: var(--blue-color);
+}
+.features .feat h3{
+    color: var(--text-btn);
+}
+/* Feautures End */
+
+/* Work Start */
+.work{
+    background-color: var(--section);
+    
+}
+
+.work .main-title::after
+{
+    content: "";
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--blue-color); 
+}
+.work .cat .btn.active{
+    color: var(--text-btn);
+    background-color: var(--bg-btn);
+}
+
+.work .cat .btn:hover{
+    color: var(--bg-btn);
+}
+
+.work .cat:hover>:not(:hover){
+   filter: blur(1px);
+   opacity: 0.5;
+}
+
+.work .box
+{
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+/* Work End */
+
+/* About Start */
+.about .main-title::after
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+
+.about .description
+{
+    max-width: 700px;
+}
+.about .row
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* About End */
+
+/* Team Start */
+.team
+{
+    background-color: var(--section);
+}
+
+.team  h3{
+    color: var(--text-btn);
+}
+
+.team .box h5{
+    background-color: var(--blue-color);
+}
+/* Team End */
+/* Project Start */
+.project
+{
+    background-color: var(--bg-color);
+}
+/* Project End */
+
+/* Blog Start */
+.blog .main-title::after
+{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--blue-color);
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.blog.box
+{
+    background-color: var(--section);
+}
+/* Blog End */
+
+/* Sub Start */
+.sub
+{
+    background-color: var(--text-btn);
+}
+.sub input
+{
+    
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.sub input:focus
+{
+    outline: none;
+}
+.sub input::placeholder
+{
+    color:white
+}
+
+/* Footer Start */
+.footer
+{
+    background-color: var(--bg-color);
+}
+
+.footer .firstSpan
+{
+    color: var(--blue-color);
+}
+
+.footer .secondSpan
+{
+    color: var(--text-btn);
+}
+.footer li{
+    list-style: none;
+    text-decoration: none;
+}
+.footer .brands i {
+    height: 40px; /* Increase size */
+    width: 40px; /* Increase size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+}
+.footer .google-plus-g {
+    background-color: #ea4335;
+}
+.footer .linkedin {
+    background-color: #0057b5;
+}
